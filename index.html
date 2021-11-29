@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <h1 id="reg">Application Form </h1>
+        
+            <center>
+            <table id="tab">
+                <tr>
+                   <td>
+                       <label for="FirstName">FirstName:</label>
+                      
+        
+                   </td>
+                   <td>
+                       <input type="text" name="FirstName" id="FirstName">
+                       <label id="fn"> name is required</label>
+                   </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="FatherName">Father's Name</label>
+                </td>
+                <td>
+                    <input type="text" name="FatherName" id="FatherName" >
+                    <label id="father">fathers name is required</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="Email" id="Email" >
+                    <label id="email">enter valid email </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DOB">DOB:</label>
+                   
+                </td>
+                <td>
+                    <input type="text" name="DOB" id="DOB"  >
+                    <label id="dob">dob format is incorrect</label>
+                </td>
+            </tr>
+    
+            <tr>
+                    <td>
+                        <label for="MobileNumber">MobileNumber:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="MobileNumber" id="MobileNumber" maxlength="10">
+                        <label id="mob ">enter the valid mobilenumber</label>
+                    </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="Address1"> Current Address:</label>
+                </td>
+                <td>
+                    <input type="text" name="Address1" id="Address1" >
+                    <label id="add1" >Address cannot be empty</label>
+                </td>
+                <td>
+                    <input type="text" name="Address2" id="Address2" >
+                </td>
+            
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" name="City1" id="City1" >
+                    <label id="city">enter the city</label>
+
+                </td>
+                <td>
+                    <select name="State" id="State1">
+                        <option value="TamilNadu">TamilNadu</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="Pincode1" id="Pincode1">
+                    <label id="pin">enter the valid pincode</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Permanent_Address">Permanent Address:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="request_type" onchange="permanentvalidation()"
+                     id="Permanent_Address"><label for="Permanent_Address">Same adress</label>
+                    <label id="permanent" > Enter the Permanent Address</label>
+                    
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" name="Address3" id="Address3">
+                    
+                </td>
+                <td>
+                    <input type="text" name="Address4" id="Address4" >
+                </td>
+            
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" name="City2" id="City2" >
+                   
+
+                </td>
+                <td>
+                    <select name="State" id="State2">
+                        <option value="TamilNadu">TamilNadu</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="Pincode2" id="Pincode2" >
+                </td>
+            </tr> 
+                <tr>
+                    <td>
+                        <label for="Photo">Upload profile photo</label>
+                        <br><br><br><br><br>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr id="but">
+                   <td >
+                    <button onclick="  return validation()">submit</button>
+                   </td>
+                </tr>
+        </table>     
+    </center>
+        </form>       
+    </div>   
+</body>
+</html>
+
+  
+        
